@@ -8,7 +8,7 @@ body {
 }
 
 .calculator {
-  width: 300px;
+  width: 30%;
   background-color: #333;
   border-radius: 10px;
   padding: 20px;
@@ -47,28 +47,38 @@ body {
   background-color: #555;
 }
 
-.button.equal {
-    background-color: #c6b546;
-  flex-basis: calc(51% - -137px);
+#button_equal {
+  background-color: #c6b546;
+  height: 56px;
+  width: 48%;
+  margin-top: 6px;
+  margin-left: 4px;
+  font-size: 24px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
+#button_equal :hover {
+  background-color: #ffdd00;
 
+}
 .button.clear {
   background-color: #c6b546;
   
 }
 
 .button.clear:hover {
-  background-color: #c6b546;
+  background-color: #f5d400;
 }
 
 .button.operator {
   background-color: #c6b546;
-  order: -2;
-  width: 100%;
 }
 
 .button.operator:hover {
   background-color:  #ffe32a;
+  
 }
 
 
