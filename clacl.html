@@ -4,40 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculatrice</title>
-<link rel="stylesheet" href="/calculatrice/style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
 <div class="calculator">
-  <div class="display" id="display">0</div>
+  <div class="display" id="display"></div>
 
   <div class="buttons">
-    <button class="button clear">C</button>
-    <button class="button operator" >+</button>
-    <button class="button operator">-</button>
-    <button class="button operator" >x</button>
-    <button class="button operator" >÷</button>
+    <button class="button clear" onclick="()">C</button>
+    <button class="button operator" onclick="('+')">+</button>
+    <button class="button operator" onclick="('-')">-</button>
+    <button class="button operator" onclick="('*')">x</button>
+    <button class="button operator" onclick="('/')">÷</button>
+    <button class="button" onclick="display('9')">9</button>
+    <button class="button" onclick="display('8')">8</button>
+    <button class="button" onclick="display('7')">7</button>
     <button class="button percent">%</button>
-    
-    <button class="button" >0</button>
-    <button class="button" >7</button>
-    <button class="button" >8</button>
-    <button class="button" >9</button>
-    <button class="button" >.</button>
-    <button class="button" >4</button>
-    <button class="button" >5</button>
-    <button class="button" >6</button>
-    <button class="button" >00</button>
-    <button class="button" >1</button>
-    <button class="button" >2</button>
-    <button class="button" >3</button> 
+    <button class="button" onclick="display('6')">6</button>
+    <button class="button" onclick="display('5')">5</button>
+    <button class="button" onclick="display('4')">4</button>
+    <button class="button" onclick="()">.</button>
+    <button class="button" onclick="display('3')">3</button>
+    <button class="button" onclick="display('2')">2</button>
+    <button class="button" onclick="display('1')">1</button>
+    <button class="button" onclick="display('00')">00</button>
+    <button class="button" onclick="display('0')">0</button> 
+    <button id="button_equal" onclick="()">=</button>
    
-    <button id="button_equal" >=</button>
+  
   </div>
 </div>
 
 
-
+<script src="/script.js"></script>
 </body>
 </html>
