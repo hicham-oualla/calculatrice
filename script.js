@@ -9,3 +9,8 @@ function clearDisplay(){
     display.value = "  ";
 
 }
+function appendOperator(op) {
+    display.value += op; 
+    step ++;
+    operation = op;
+}
