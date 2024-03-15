@@ -5,39 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculatrice</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
 <div class="calculator">
-  <div class="display" id="display"></div>
+  <input id="display" type="text">
 
   <div class="buttons">
-    <button class="button clear" onclick="()">C</button>
-    <button class="button operator" onclick="('+')">+</button>
-    <button class="button operator" onclick="('-')">-</button>
-    <button class="button operator" onclick="('*')">x</button>
-    <button class="button operator" onclick="('/')">÷</button>
-    <button class="button" onclick="display('9')">9</button>
-    <button class="button" onclick="display('8')">8</button>
-    <button class="button" onclick="display('7')">7</button>
+    <button class="button clear" onclick="clearDisplay()">C</button>
+    <button class="button operator" onclick="appendOperator('+')">+</button>
+    <button class="button operator" onclick="appendOperator('-')">-</button>
+    <button class="button operator" onclick="appendOperator('*')">*</button>
+    <button class="button operator" onclick="appendOperator('/')">÷</button>
+    <button class="button" onclick="Display('9')">9</button>
+    <button class="button" onclick="Display('8')">8</button>
+    <button class="button" onclick="Display('7')">7</button>
     <button class="button percent">%</button>
-    <button class="button" onclick="display('6')">6</button>
-    <button class="button" onclick="display('5')">5</button>
-    <button class="button" onclick="display('4')">4</button>
-    <button class="button" onclick="()">.</button>
-    <button class="button" onclick="display('3')">3</button>
-    <button class="button" onclick="display('2')">2</button>
-    <button class="button" onclick="display('1')">1</button>
-    <button class="button" onclick="display('00')">00</button>
-    <button class="button" onclick="display('0')">0</button> 
-    <button id="button_equal" onclick="()">=</button>
-   
-  
+    <button class="button" onclick="Display('6')">6</button>
+    <button class="button" onclick="Display('5')">5</button>
+    <button class="button" onclick="Display('4')">4</button>
+    <button class="button">.</button>
+    <button class="button" onclick="Display('3')">3</button>
+    <button class="button" onclick="Display('2')">2</button>
+    <button class="button" onclick="Display('1')">1</button>
+    <button class="button" onclick="Display('00')">00</button>
+    <button class="button" onclick="Display('0')">0</button> 
+    <button id="button_equal" onclick="calculate()">=</button>
   </div>
 </div>
 
-
-<script src="/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
